@@ -1,0 +1,55 @@
+[package]
+name = "governance-node"
+version = "0.1.0"
+edition = "2021"
+description = "Governance node for E3 Core DAO - handles voting, DIDs, and proposals"
+
+[[bin]]
+name = "governance-node"
+path = "src/main.rs"
+
+[dependencies]
+# Kafka event streaming
+rdkafka = { version = "0.36", features = ["tokio"] }
+
+# Core blockchain library
+e3-core-lib = { path = "../e3-core-lib" }
+
+# Cryptography
+ed25519-dalek = "1.0"
+sha2 = "0.10"
+
+# Async runtime
+tokio = { version = "1.0", features = ["full"] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+hex = "0.4"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Time
+chrono = { version = "0.4", features = ["serde"] }
+
+# CLI
+clap = { version = "4.0", features = ["derive"] }
+
+# HTTP API
+warp = "0.3"
+axum = "0.6"
+tower-http = { version = "0.4", features = ["cors"] }
+
+# Encoding/Hashing
+base64 = "0.22"
+sha256 = "1.0"
+uuid = { version = "1.0", features = ["v4"] }
+
+# Logging
+log = "0.4"
+env_logger = "0.10"
+
+# Random number generation
+rand = "0.7"

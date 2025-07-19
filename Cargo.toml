@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "admin-node",
+    "public-node",
+    "governance-node",
+    "e3-wallet"
+]
+exclude = ["admin-dashboard"]
+
+# This is now a workspace-only Cargo.toml
+# Individual crates have their own package definitions
