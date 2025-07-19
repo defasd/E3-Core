@@ -49,9 +49,10 @@ Admin nodes can’t mint new GU without verified gold deposits.
 
 SU expands/contracts based on economic demand, keeping value stable but avoiding the "print money endlessly" problem.
 
-You can view the website for more information + a whitepaper 
+You can view the website for more information + a whitepaper at 
+<---------------->
 ellipe3.com
-
+<---------------->
 
 ---Please keep in mind this is just the demo / mvp made by a student
 
